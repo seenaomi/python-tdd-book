@@ -1,9 +1,10 @@
+from django.test import LiveServerTestCase
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
-import unittest
 
-class NewVisitorTest(unittest.TestCase):
+
+class NewVisitorTest(LiveServerTestCase):
 
     def setUp(self):
         self.browser = webdriver.Firefox()
@@ -66,6 +67,3 @@ class NewVisitorTest(unittest.TestCase):
         # She visits that URL - her to-do list still there.
 
         # Satisfied, she goes to sleep
-
-if __name__ == '__main__':
-    unittest.main(warnings='ignore')
