@@ -46,7 +46,7 @@ class NewVisitorTest(unittest.TestCase):
         # There is still a text box inviting her to add another item. She
         # enters "Use peacock feathers to make a fly" (Edith is very methodical)
         self.fail('Finish the test!')
-        
+
         # The page updates again, now shows both items on her list
 
         # Edith wonders whether the site will remember her list. Then she sees
